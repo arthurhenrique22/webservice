@@ -1,0 +1,26 @@
+Métodos HTTP>
+
+GET: Essa é a requisiçao, mais comum de todas através dessa requisição nós pedimos
+a representação de um recurso: que pode ser um arquivo html, xml, json, etc.
+
+PUT: Requisita que um recurso seja "guardado" na URL fornecida.Se o recurso já existir,
+ele deve ser atualizado. Se não existir pode ser criado.
+
+DELETE: Exclui o recurso especificado.
+
+TRACE: Devolve a mesma requisição que for enviada veja se houve mudança e adições
+por servidores intermediários.
+
+OPTIONS: Retorna os métodos HTTP suportados pelo servidor para a URL especificada.
+
+PATCH: Serve para atualizar partes de um recurso, e não o recurso todo.
+
+CONNECT: Converte a requisição de conexão para um túnel TCP/IP transparente, geralmente
+para facilitar a comunição criptografada com SSL (HTTPS) através de um proxy HTTP não criptografado.
+
+HEAD: Retorna somente os cabeçalhos de uma resposta.
+
+***O que é WSDL?***
+é um formato da Extensible Markup Language (XML). Ele ajuda os serviços da web a se comunicarem, enviando dados sobre sua funcionalidade e recursos uns para os outros. 
+WSDL usa um formato simples para descrever o que cada serviço da web fornece sem que você saiba muito sobre aquele serviço de antemão. Ele expõe terminais de comunicação,
+que são pontos que concedem aos clientes acesso ao serviço e permitem que os aplicativos da web troquem mensagens entre si.
