@@ -6,6 +6,8 @@ a representação de um recurso: que pode ser um arquivo html, xml, json, etc.
 PUT: Requisita que um recurso seja "guardado" na URL fornecida.Se o recurso já existir,
 ele deve ser atualizado. Se não existir pode ser criado.
 
+POST: Envia dados ao servidor.
+
 DELETE: Exclui o recurso especificado.
 
 TRACE: Devolve a mesma requisição que for enviada veja se houve mudança e adições
