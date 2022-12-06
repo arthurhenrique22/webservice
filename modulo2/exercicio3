@@ -1,0 +1,27 @@
+As seis regras de uma API REST:
+
+1. Interface uniforme: Todas as solicitações da API para o mesmo recurso devem ser iguais,
+ não importa a origem da solicitação. A API de REST deve garantir que a mesma parte dos dados dados, como o nome
+ ou endereço de e-mail de um usuário, pertença a apenas um indentificador de recurso uniforme (URI). Os recursos
+ não devem ser muito grande, mas devem conter todas as informações que o cliente possa vim precisar.
+ 
+2. Desacoplamento do cliente-servidor: No projeto API de REST, os aplicativos cliente e servidor devem ser complemente
+ independentes de um do outro. A única informação que o aplicativo cliente deve receber é a URI do recurso solicitado.
+ Ela não pode interagir com o aplicativo do servidor de qualquer outra forma. Da mesma forma, um aplicativo do servidor não deve
+ modificar o aplicativo cliente, exceto para transferi-los aos dados solicitados via HTTP.
+
+3. Sem estado definido: As APIs de REST não possuem estado definido, o que significa que cada solicitação precisa incluir todas as
+informações necessárias para processá-lo. Em outras palavras, as APIs de REST não requerem nenhuma sessão do lado do servidor.
+Os aplicativos do servidor não tem permissçao para armazenar nenhum dado relacionado a uma solicitação de cliente.
+
+4. Capacidade de armazenamento em cache: Quando possível, os recursos devem ser armazenados em cache pelo pelo cliente ou
+servidor. As respostas do servidor também precisam conter informações sobre as permissões de cache do recurso fornecido. O
+objetivo é melhorar o desempenho do cliente, além de aumentar a escalabilidade do servidor.
+
+5. Arquitetura de sistema em camadas: Em APIs de REST, as chamadas e respostas passam por diferentes camadas. De maneira geral,
+não assuma que os aplicativos cliente e servidor se conectem diretamente um ao outro. Pode haver uma série de intermediários diferentes no loop
+de loop de comunicação. As APIs de REST precisam ser projetadas para que nem o cliente e nem o servidor possam dizer  se ele se comunica
+com o aplicativo final ou um intermediário.
+
+6. Código sob demanda(opcional). As APIs de REST geralmente enviam recursos estáticos, mas em certos casos, as respostas também podem conter código executável
+(como applets Java). Nestes casos, o cpodigo deve ser executado somente sob demanda.
