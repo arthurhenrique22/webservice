@@ -1,0 +1,19 @@
+{  
+    
+    "alunos":[
+        {
+            "id":1,
+            "nome":"Arthur Henrique",
+            "graduação": "Engenharia de Software",
+            "nota": 10,
+            "aprovado": true
+        },
+        {
+            "id":2,
+            "nome":"Maria",
+            "graduação": "Engenharia de Software",
+            "nota": 10,
+            "aprovado": true
+        }
+    ]
+}
